@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttCubeControl.App", "MqttCubeControll.App\MqttCubeControl.App.csproj", "{80F76A1F-695F-43A7-8068-5B52C037413C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttCubeControl.Input", "MqttCubeControll.Input\MqttCubeControl.Input.csproj", "{EBD93DEB-C3B6-44DA-9F82-29FD32DB19E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttCubeControl.Mqtt", "MqttCubeControll.Mqtt\MqttCubeControl.Mqtt.csproj", "{60D2F837-E717-458F-B928-FA443003C0E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqttCubeControl.Helpers", "MqttCubeControll.Helpers\MqttCubeControl.Helpers.csproj", "{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80F76A1F-695F-43A7-8068-5B52C037413C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F76A1F-695F-43A7-8068-5B52C037413C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F76A1F-695F-43A7-8068-5B52C037413C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F76A1F-695F-43A7-8068-5B52C037413C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD93DEB-C3B6-44DA-9F82-29FD32DB19E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD93DEB-C3B6-44DA-9F82-29FD32DB19E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD93DEB-C3B6-44DA-9F82-29FD32DB19E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD93DEB-C3B6-44DA-9F82-29FD32DB19E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D2F837-E717-458F-B928-FA443003C0E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D2F837-E717-458F-B928-FA443003C0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D2F837-E717-458F-B928-FA443003C0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D2F837-E717-458F-B928-FA443003C0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BB127C5-3E64-43EF-A042-46CEA8C21D9C}
+	EndGlobalSection
+EndGlobal

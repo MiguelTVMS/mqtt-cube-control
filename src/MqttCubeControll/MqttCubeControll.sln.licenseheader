@@ -1,0 +1,20 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+// Copyright (c) 2022 João Miguel <joao@miguel.ms>
+// This program is distributed under the terms of the GNU General Public License
+
+extensions: .aspx .ascx
+<%-- 
+Copyright (c) 2022 João Miguel <joao@miguel.ms>
+This program is distributed under the terms of the GNU General Public License
+--%>
+
+extensions: .vb
+'Copyright (c) 2022 João Miguel <joao@miguel.ms>
+'This program is distributed under the terms of the GNU General Public License
+
+extensions:  .xml .config .xsd
+<!--
+Copyright (c) 2022 João Miguel <joao@miguel.ms>
+This program is distributed under the terms of the GNU General Public License
+-->
