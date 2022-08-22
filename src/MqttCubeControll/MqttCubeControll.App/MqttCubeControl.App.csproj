@@ -9,6 +9,7 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <AnalysisLevel>latest</AnalysisLevel>
     <UserSecretsId>0b58e0c1-3dea-4fb2-9947-ddadfb5a337a</UserSecretsId>
+    <AssemblyName>MqttCubeControll</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MqttCubeControll.Commands\MqttCubeControll.Commands.csproj" />
     <ProjectReference Include="..\MqttCubeControll.Helpers\MqttCubeControl.Helpers.csproj" />
     <ProjectReference Include="..\MqttCubeControll.Input\MqttCubeControl.Input.csproj" />
     <ProjectReference Include="..\MqttCubeControll.Mqtt\MqttCubeControl.Mqtt.csproj" />

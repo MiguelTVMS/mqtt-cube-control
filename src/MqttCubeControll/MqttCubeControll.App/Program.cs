@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using MqttCubeControl.Helpers;
 using MqttCubeControl.Input.Sources;
 using MqttCubeControl.Mqtt;
+using MqttCubeControll.Commands;
+using MqttCubeControll.Commands.Windows;
 
 namespace MqttCubeControl.App // Note: actual namespace depends on the project name.
 {
@@ -13,6 +15,8 @@ namespace MqttCubeControl.App // Note: actual namespace depends on the project n
         static Settings _settings = new Settings();
         static IConnection? _connection;
         static readonly CancellationTokenSource _cancellationSource = new();
+
+        private static Devices _devices = new();
 
         static async Task Main(string[] args)
         {
@@ -33,11 +37,9 @@ namespace MqttCubeControl.App // Note: actual namespace depends on the project n
                 return;
             }
 
-            var movement = source.ToMovement();
-            Console.WriteLine(movement.ToString());
-            await Task.CompletedTask;
-        }
+            await _devices.ActAsync(source.ToMovement());
 
+        }
         private static void LoadSettings()
         {
             IConfiguration config = new ConfigurationBuilder()
@@ -47,6 +49,20 @@ namespace MqttCubeControl.App // Note: actual namespace depends on the project n
                 .Build();
 
             _settings = config.GetRequiredSection("settings").Get<Settings>();
+
+            _devices.Clear();
+            for (int i = 0; i < _settings.Sides.Count; i++)
+            {
+                switch (_settings.Sides[i].ToLowerInvariant())
+                {
+                    case "volume":
+                        _devices.Add(new Volume(i));
+                        break;
+                    default:
+                        throw new Exception($"There's no contol implementation for \"{_settings.Sides[i]}\".");
+                }
+            }
+
         }
     }
 }

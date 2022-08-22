@@ -9,5 +9,8 @@ namespace MqttCubeControl.App
     {
         [JsonPropertyName("mqtt")]
         public MqttCubeControl.Mqtt.ConnectionSettings Mqtt { get; set; } = new Mqtt.ConnectionSettings();
+
+        [JsonPropertyName("sides")]
+        public List<string> Sides { get; set; } = new();
     }
 }

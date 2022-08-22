@@ -114,7 +114,9 @@ namespace MqttCubeControl.Input.Sources
 
         public bool HasAction() => (!string.IsNullOrEmpty(Action));
 
-        public Movement ToMovement() => new Movement(ConvertAction(), ConvertRotateDirection(), ActionAngle ?? Decimal.Zero);
+        public Movement ToMovement() => new Movement(ConvertSide(), ConvertAction(), ConvertRotateDirection(), ActionAngle ?? Decimal.Zero);
+
+        private int ConvertSide() => Side.HasValue ? Side.Value : -1;
 
         private Action ConvertAction()
         {

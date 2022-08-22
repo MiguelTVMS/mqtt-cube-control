@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttCubeControl.Input", "Mq
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttCubeControl.Mqtt", "MqttCubeControll.Mqtt\MqttCubeControl.Mqtt.csproj", "{60D2F837-E717-458F-B928-FA443003C0E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqttCubeControl.Helpers", "MqttCubeControll.Helpers\MqttCubeControl.Helpers.csproj", "{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttCubeControl.Helpers", "MqttCubeControll.Helpers\MqttCubeControl.Helpers.csproj", "{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MqttCubeControll.Commands", "MqttCubeControll.Commands\MqttCubeControll.Commands.csproj", "{2A44B645-2D92-4262-B5D3-AD9A26425DA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C33A6FC-A4B9-4168-9C19-0617F60F93CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A44B645-2D92-4262-B5D3-AD9A26425DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A44B645-2D92-4262-B5D3-AD9A26425DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A44B645-2D92-4262-B5D3-AD9A26425DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A44B645-2D92-4262-B5D3-AD9A26425DA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
